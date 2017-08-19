@@ -1,125 +1,55 @@
-/* *********************************
-           Variables
-  ********************************** */
-/* *********************************
-   Some Style Overrides on Bootstrap
-  ********************************** */
-.navbar-inverse {
-  background: rgba(62, 195, 246, 0);
-  border-bottom: none;
+body{
+    // background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
+    // padding:50px;
 }
 
-.navbar-inverse .navbar-toggle {
-  border: 1px solid #333;
-  border-color: rgba(255, 255, 255, 0.7);
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
 }
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: transparent;
+#login-dp .help-block{
+    font-size:12px    
 }
-@media (max-width: 767px) {
-  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    background: rgba(255, 255, 255, 0.75);
-  }
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
 }
-
-.navbar-inverse .navbar-nav > li > a {
-  color: black;
+#login-dp .social-buttons{
+    margin:12px 0    
 }
-
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #22F;
+#login-dp .social-buttons a{
+    width: 49%;
 }
-li a {
-  text-decoration: none;
-  position: relative;
-  padding: 6px 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  color: lightblue;
+#login-dp .form-group {
+    margin-bottom: 10px;
 }
-li a:after {
-  content: '';
-  width: 0%;
-  margin-left: 50%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  border-radius: 40%;
-  position: absolute;
-  transition: all 0.5s;
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
 }
-li a:hover:after {
-  background-color: white;
-  width: 60%;
-  margin-left: 20%;
-  box-shadow: 0px 0px 10px white;
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
 }
-li a.active:after {
-  background-color: white;
-  width: 60%;
-  margin-left: 20%;
-  box-shadow: 0px 0px 10px white;
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
 }
-
-/* *********************************
-           Toolbar Logo
-  ********************************** */
-.small-logo-container {
-  padding-top: 50px;
-  height: 50px;
-  overflow: hidden;
-  position: absolute;
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
 }
-
-.small-logo {
-  color: white;
-  font-size: 2.5em;
-  padding-bottom: 2px;
-}
-
-/* *********************************
-           Big Logo
-  ********************************** */
-.big-logo-row {
-  background: gold;
-}
-.big-logo-row .big-logo-container {
-  padding-top: 50px;
-}
-.big-logo-row h1 {
-  font-size: 4em;
-  margin: 0;
-  padding: 0 0 15px 0;
-}
-@media (min-width: 400px) {
-  .big-logo-row h1 {
-    font-size: 4.5em;
-  }
-}
-@media (min-width: 440px) {
-  .big-logo-row h1 {
-    font-size: 5.5em;
-  }
-}
-@media (min-width: 500px) {
-  .big-logo-row h1 {
-    font-size: 6.5em;
-  }
-}
-@media (min-width: 630px) {
-  .big-logo-row h1 {
-    font-size: 7.5em;
-  }
-}
-@media (min-width: 768px) {
-  .big-logo-row h1 {
-    font-size: 9em;
-    padding-bottom: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .big-logo-row h1 {
-    font-size: 12em;
-  }
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }
