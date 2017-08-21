@@ -1,2 +1,11 @@
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if notice.present? %>
+  <div class="alert alert-success">
+    <a href="#" class="alert-link"><%= notice %></a>
+  </div>
+<% end %>
+
+<% if notice.present? %>
+  <div class="alert alert-danger">
+    <a href="#" class="alert-link"><%= alert %></a>
+  </div>
+<% end %>
