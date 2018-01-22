@@ -13,3 +13,22 @@ body {
         padding-top: 56px;
     }
 }
+
+.post-container {
+	// padding: 20px;
+}
+
+.header-container {
+	padding-left: 20px;
+	margin-top: 10px;
+	height: 250px; 
+	background-image: url('http://templatelite.com/uploads/2008/11/set7-header-original.jpg');
+	background-size: cover;
+}
+
+.page-header {
+	vertical-align: bottom;
+	position: relative;
+	top: 130px;
+	color: white;
+}
